@@ -1,4 +1,6 @@
 import logo from './logo.svg';
+import { Tooltip } from 'react-tooltip';
+import 'react-tooltip/dist/react-tooltip.css';
 import './App.css';
 
 function App() {
@@ -14,9 +16,11 @@ function App() {
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
+          id="tooltip-anchor"
         >
           Learn React
         </a>
+        <Tooltip anchorId="tooltip-anchor" content="Test Tooltip" />
       </header>
     </div>
   );
